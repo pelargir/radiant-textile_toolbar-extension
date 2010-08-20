@@ -7,7 +7,7 @@ end
 class TextileToolbarExtension < Radiant::Extension
   version "1.0"
   description "Adds toolbars to Textile-enabled text areas in the admin."
-  url "http://dev.radiantcms.org/radiant/browser/trunk/extensions/textile-toolbar"
+  url "http://dev.radiantcms.org/radiant/browser/trunk/extensions/textile_toolbar"
   
   def activate
     Admin::PageController.class_eval do
