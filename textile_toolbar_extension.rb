@@ -10,7 +10,7 @@ class TextileToolbarExtension < Radiant::Extension
   url "http://dev.radiantcms.org/radiant/browser/trunk/extensions/textile_toolbar"
   
   def activate
-    Admin::PageController.class_eval do
+    Admin::PagesController.class_eval do
       before_filter :set_textile_toolbar_javascript
       def set_textile_toolbar_javascript
         %w(lowpro textile_toolbar).each { |e| include_javascript e }
