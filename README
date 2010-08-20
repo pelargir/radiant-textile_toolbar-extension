@@ -1,13 +1,19 @@
 = Textile Toolbar Extension for Radiant
 
-Adds toolbars to Textile-enabled text areas in the admin.
+Adds toolbars to Textile-enabled text areas in the admin. (This plugin isn't
+quite complete yet unfortunately.)
 
 == Installation
 
 From the target Radiant project:
   
-  git clone git://github.com/pelargir/radiant-textile_toolbar-extension.git vendor/extensions/textile_toolbar
-
+  script/extension install textile_toolbar
+  
+After installing run the migrations and update:
+  
+  rake radiant:extensions:textile_toolbar:migrate
+  rake radiant:extensions:textile_toolbar:update
+  
 Start your project, login as an admin, and visit the Extensions page. The Textile
 Toolbar extension should be listed there.
 
